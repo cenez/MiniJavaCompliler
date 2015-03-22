@@ -13,8 +13,8 @@ calculator
 
 # eclipse conf file
 .settings
-.classpath
-.project
+#.classpath
+#.project
 .manager
 .cache
 
