@@ -1,0 +1,36 @@
+*.class
+JavaCC_tutorial.pdf
+Writing Interpreters with JavaCC.html
+javacc-5.0src.zip
+pluginjavacc
+calculator
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+
+# eclipse conf file
+.settings
+.classpath
+.project
+.manager
+.cache
+
+# building
+target
+build
+null
+tmp
+temp
+dist
+test-output
+build.log
+
+# misc
+.DS_Store
+prefs
+
+Thumbs.db
+
