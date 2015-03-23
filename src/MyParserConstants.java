@@ -9,15 +9,25 @@ public interface MyParserConstants {
   /** End of File. */
   int EOF = 0;
   /** RegularExpression Id. */
-  int IF = 1;
+  int WHILE = 4;
   /** RegularExpression Id. */
-  int DIGIT = 2;
+  int BEGIN = 5;
   /** RegularExpression Id. */
-  int ID = 3;
+  int END = 6;
   /** RegularExpression Id. */
-  int NUM = 4;
+  int DO = 7;
   /** RegularExpression Id. */
-  int REAL = 5;
+  int IF = 8;
+  /** RegularExpression Id. */
+  int THEN = 9;
+  /** RegularExpression Id. */
+  int ELSE = 10;
+  /** RegularExpression Id. */
+  int SEMI = 11;
+  /** RegularExpression Id. */
+  int ASSIGN = 12;
+  /** RegularExpression Id. */
+  int ID = 13;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -25,15 +35,19 @@ public interface MyParserConstants {
   /** Literal token values. */
   String[] tokenImage = {
     "<EOF>",
-    "\"if\"",
-    "<DIGIT>",
-    "<ID>",
-    "<NUM>",
-    "<REAL>",
-    "<token of kind 6>",
-    "\"\"",
+    "\" \"",
     "\"\\t\"",
     "\"\\n\"",
+    "\"while\"",
+    "\"begin\"",
+    "\"end\"",
+    "\"do\"",
+    "\"if\"",
+    "\"then\"",
+    "\"else\"",
+    "\";\"",
+    "\"=\"",
+    "<ID>",
   };
 
 }
