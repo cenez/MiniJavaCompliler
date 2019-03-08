@@ -4,10 +4,12 @@ import java.io.*;
 public class MyParser implements MyParserConstants {
   public static void main(String [] args)
   {
-    MyParser parser;
+    MyParser parser = null;
     try
     {
-      parser = new MyParser(new FileInputStream("/home/cenez/workspace/gits/MiniJavaCompliler/src/fonte.txt")); //args[0]));
+      if(args.length>0)
+          parser = new MyParser(new FileInputStream(args[0]));
+      else parser = new MyParser(new FileInputStream("/home/cenez/workspace/gits/MiniJavaCompliler/src/fonte.txt")); //args[0]));
     }
     catch (FileNotFoundException e)
     {
