@@ -1,1 +1,5 @@
-if a then a=b
+a=x;
+if a then 
+a=b;
+while a do
+a=z

@@ -7,7 +7,7 @@ public class MyParser implements MyParserConstants {
     MyParser parser;
     try
     {
-      parser = new MyParser(new FileInputStream("J:/MiniJavaCompliler/src/fonte.txt")); //args[0]));
+      parser = new MyParser(new FileInputStream("/home/cenez/workspace/gits/MiniJavaCompliler/src/fonte.txt")); //args[0]));
     }
     catch (FileNotFoundException e)
     {
