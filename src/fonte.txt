@@ -1,5 +1,0 @@
-a=x;
-if a then 
-a=b;
-while a do
-a=z
